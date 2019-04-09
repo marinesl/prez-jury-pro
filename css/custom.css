@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Sarabun-Regular';
+    src: url('fonts/Sarabun-Regular.eot') format('embedded-opentype')
+            url('fonts/Sarabun-Regular.woff') format('woff'), 
+            url('fonts/Sarabun-Regular.ttf')  format('truetype'), 
+            url('fonts/Sarabun-Regular.svg#Sarabun-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarabun-Medium';
+    src: url('fonts/Sarabun-Medium.eot?#iefix') format('embedded-opentype'),  
+            url('fonts/Sarabun-Medium.woff') format('woff'), 
+            url('fonts/Sarabun-Medium.ttf')  format('truetype'), 
+            url('fonts/Sarabun-Medium.svg#Sarabun-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraBold';
+    src: url('fonts/Sarabun-ExtraBold.eot?#iefix') format('embedded-opentype'),  
+            url('fonts/Sarabun-ExtraBold.woff') format('woff'), 
+            url('fonts/Sarabun-ExtraBold.ttf')  format('truetype'), 
+            url('fonts/Sarabun-ExtraBold.svg#Sarabun-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Entrée */
+section#entree h2 {
+    font-family: 'Sarabun-Regular';
+    font-size: 1.1em;
+}
+
+section#entree h1 span {
+    font-family: 'Sarabun-Medium';
+}
+
+section#entree h1 {
+    font-family: 'Sarabun-ExtraBold';
+    font-size: 1.8em;
+}
