@@ -52,14 +52,19 @@
 
 /* Commun Reveal */
 .slides {
-    left: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    right: 0 !important;
-    transform: inherit !important;
+    /* left: 0 !important; */
+    top: 5% !important;
+    /* bottom: 0 !important; */
+    /* right: 0 !important; */
+    transform: translate(-50%, -5%) scale(0.941) !important;   
 }
 
-section#entree,
+.slides > section , .slides > section > section {
+    top: 0;
+    bottom: 0;
+}
+
+/* section#entree,
 section#sommaire,
 section#fin,
 section#professionnel section,
@@ -68,7 +73,7 @@ section#futur section {
     height: 85vh;
     width: 85vw;
     right: -13%;
-}
+} */
 
 .reveal section img {
     border: none;
@@ -115,6 +120,17 @@ h2 {
     font-size: 0.9em;
 }
 
+img.mockup {
+    position: absolute;
+    left: 0;
+}
+
+img.flag {
+    width: 10rem;
+    position: absolute;
+    right: 0;
+}
+
 
 
 /* Entrée */
@@ -134,11 +150,6 @@ section#entree h1 {
     top: 25%;
     left: 50%;
     transform: translate(-50%,-25%);
-}
-
-section#entree h1 span {
-    font-family: 'Sarabun-Medium';
-    font-size: 3rem;
 }
 
 
