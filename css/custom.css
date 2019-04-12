@@ -52,10 +52,7 @@
 
 /* Commun Reveal */
 .slides {
-    /* left: 0 !important; */
     top: 5% !important;
-    /* bottom: 0 !important; */
-    /* right: 0 !important; */
     transform: translate(-50%, -5%) scale(0.941) !important;   
 }
 
@@ -63,17 +60,6 @@
     top: 0;
     bottom: 0;
 }
-
-/* section#entree,
-section#sommaire,
-section#fin,
-section#professionnel section,
-section#realisations section,
-section#futur section {
-    height: 85vh;
-    width: 85vw;
-    right: -13%;
-} */
 
 .reveal section img {
     border: none;
@@ -83,13 +69,11 @@ section#futur section {
 
 
 /* Commun custom */
-img.img-globe {
-    width: 5rem;
-
+img.mockup {
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(0,0);
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 
 div.footer {
@@ -100,7 +84,8 @@ div.footer {
 
     width: 100%;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
+    text-shadow: -1px 0 #0B032D, 0 1px #0B032D, 1px 0 #0B032D, 0 -1px #0B032D;
 }
 
 .light {
@@ -110,9 +95,10 @@ div.footer {
 section section:first-child h2 {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
+    left: 80%;
+    transform: translate(-80%,-50%);
+
+    font-size: 5rem;
 }
 
 h2 {
@@ -120,15 +106,9 @@ h2 {
     font-size: 0.9em;
 }
 
-img.mockup {
-    position: absolute;
-    left: 0;
-}
-
-img.flag {
-    width: 10rem;
-    position: absolute;
-    right: 0;
+h3 {
+    font-family: 'Sarabun-Regular' !important;
+    font-size: 0.8em !important;
 }
 
 
@@ -139,17 +119,27 @@ section#entree h2 {
     top: 0;
     left: 50%;
     transform: translate(-50%,0);
+
+    color: #fff;
+    text-shadow: -1px 0 #0B032D, 0 1px #0B032D, 1px 0 #0B032D, 0 -1px #0B032D;
 }
 
 section#entree h1 {
     font-family: 'Sarabun-ExtraBold';
     font-size: 1.8em;
-    line-height: 4.8rem;
+    line-height: 5.5rem;
+
+    color: #843B62;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
     position: relative;
     top: 25%;
     left: 50%;
     transform: translate(-50%,-25%);
+}
+
+section#entree h1 span {
+    font-size: 1.5em;
 }
 
 
@@ -159,34 +149,104 @@ section#sommaire h2 {
     top: 0;
     left: 50%;
     transform: translate(-50%,0);
-}
 
-section#sommaire p#sommaire-sous-titre {
-    font-family: 'Sarabun-Regular';
-    font-size: 2rem;
+    color: #0B032D;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 section#sommaire p#sommaire-p {
     margin-top: 4rem;
+    margin-bottom: 6rem;
+
+    font-family: 'Sarabun-Regular';
+    color: #0B032D;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+section#sommaire .sommaire-etape {
+    float: left;
+    position: relative;
+    width: 33%
+}
+
+section#sommaire .sommaire-etape p {
+    font-family: 'Sarabun-Regular';
+    color: #0B032D;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+section#sommaire .sommaire-etape img {
+    width: 8rem;
 }
 
 
 /* Parcours professionnel */
-section#professionnel p.pensee {
-    font-family: 'Sarabun-ThinItalic';
-    font-size: 1.5rem;
+section#professionnel section:first-child h2, section#professionnel section:first-child h3 {
+    color: #fff;
+    text-shadow: -1px 0 #0B032D, 0 1px #0B032D, 1px 0 #0B032D, 0 -1px #0B032D;
 }
 
-section#professionnel p.etape {
+section#professionnel .etape {
+    position: relative;
+    float: left;
+
+    margin-top: 2rem;
+}
+
+section#professionnel section:nth-child(2) .etape {
+    width: 33%;
+}
+
+section#professionnel section:nth-child(3) .etape,
+section#professionnel section:nth-child(4) .etape {
+    width: 50%;
+}
+
+section#professionnel .etape p {
     font-family: 'Sarabun-Light';
     font-size: 2rem;
 }
 
-section#professionnel p.etape span {
+section#professionnel .etape p span {
     font-family: 'Sarabun-Medium';
 }
 
+section#professionnel .pensee {
+    width: 100%;
+    position: relative;
+    float: left;
+
+    margin-top: 5rem; 
+}
+
+section#professionnel .pensee p {
+    font-family: 'Sarabun-ThinItalic';
+    font-size: 1.5rem;
+}
+
+
 /* Réalisations */
+section#realisations section:first-child h2, section#realisations section:first-child h3 {
+    color: #fff;
+    text-shadow: -1px 0 #0B032D, 0 1px #0B032D, 1px 0 #0B032D, 0 -1px #0B032D;
+}
+
+section#realisations .left, 
+section#realisations .right {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+section#realisations video {
+    width: 50%;
+}
+
+section#realisations .cimaya div.footer {
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    color: #0B032D;
+}
+
 section#realisations img.logo-cimaya {
     margin: 0;
 
