@@ -252,7 +252,8 @@ section#realisations img.logo-cimaya {
 
     position: absolute;
     top: 0;
-    left: 43%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Projets futurs */
